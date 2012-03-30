@@ -1,4 +1,5 @@
 class AdminDataController < ApplicationController
+  before_filter :confirm_logged_in
   # GET /admin_data
   # GET /admin_data.json
   def index

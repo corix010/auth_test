@@ -11,7 +11,7 @@
 
 <% if session[:username] %>
   <div class="identity">
-    Logged in as: <%= session[:username] %> | <%= link_to("Logout", :action => 'logout') %>
+    Logged in as: <%= session[:username] %> | <%= link_to("Logout", :controller => 'home', :action => 'logout') %>
   </div>
 <% end %>
 
