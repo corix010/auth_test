@@ -1,0 +1,2 @@
+module AdminDataHelper
+end

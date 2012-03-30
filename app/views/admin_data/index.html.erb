@@ -1,0 +1,23 @@
+<h1>Listing admin_data</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @admin_data.each do |admin_datum| %>
+  <tr>
+    <td><%= admin_datum.name %></td>
+    <td><%= link_to 'Show', admin_datum %></td>
+    <td><%= link_to 'Edit', edit_admin_datum_path(admin_datum) %></td>
+    <td><%= link_to 'Destroy', admin_datum, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Admin datum', new_admin_datum_path %>
