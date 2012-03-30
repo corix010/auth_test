@@ -8,4 +8,5 @@
 
 User.delete_all
 
-User.create(login: rmarcelo, group_strings: 'User', name: 'Rico')
+User.create(login: 'rico', group_strings: 'User', name: 'Rico')
+User.create(login: 'jett', group_strings: 'Admin', name: 'Jett')
